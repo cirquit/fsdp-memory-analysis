@@ -1,1 +1,1 @@
-tensorboard --logdir=.tb_logs --port 8877
+tensorboard --logdir=.tb_logs/ --port 8877
