@@ -1,0 +1,9 @@
+tensorboard-plugin-profile
+torch-tb-profiler
+tensorboard
+pandas
+tensorflow
+matplotlib
+seaborn
+tabulate
+tbparse
