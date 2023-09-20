@@ -1,0 +1,159 @@
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/flash_attn_2.py:27: UserWarning: please install flash_attn from https://github.com/HazyResearch/flash-attention
+  warnings.warn('please install flash_attn from https://github.com/HazyResearch/flash-attention')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/mem_eff_attn.py:14: UserWarning: please install xformers from https://github.com/facebookresearch/xformers
+  warnings.warn('please install xformers from https://github.com/facebookresearch/xformers')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/flash_attn_2.py:27: UserWarning: please install flash_attn from https://github.com/HazyResearch/flash-attention
+  warnings.warn('please install flash_attn from https://github.com/HazyResearch/flash-attention')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/mem_eff_attn.py:14: UserWarning: please install xformers from https://github.com/facebookresearch/xformers
+  warnings.warn('please install xformers from https://github.com/facebookresearch/xformers')
+environmental variable OMP_NUM_THREADS is set to 256.
+environmental variable OMP_NUM_THREADS is set to 256.
+[09/17/23 02:14:17] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:522 set_device                      
+                    INFO     colossalai - colossalai - INFO: process rank 1 is bound to device 1                                                                                              
+[09/17/23 02:14:17] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:522 set_device                      
+                    INFO     colossalai - colossalai - INFO: process rank 0 is bound to device 0                                                                                              
+[09/17/23 02:14:19] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:558 set_seed                        
+                    INFO     colossalai - colossalai - INFO: initialized seed on rank 1, numpy: 1024, python random: 1024, ParallelMode.DATA: 1024, ParallelMode.TENSOR: 1024,the default     
+                             parallel seed is ParallelMode.DATA.                                                                                                                              
+[09/17/23 02:14:19] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:558 set_seed                        
+                    INFO     colossalai - colossalai - INFO: initialized seed on rank 0, numpy: 1024, python random: 1024, ParallelMode.DATA: 1024, ParallelMode.TENSOR: 1024,the default     
+                             parallel seed is ParallelMode.DATA.                                                                                                                              
+                    INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/initialize.py:119 launch                                        
+                    INFO     colossalai - colossalai - INFO: Distributed environment is initialized, data parallel size: 2, pipeline parallel size: 1, tensor parallel size: 1                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:154 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: gpt2_xl, CAI_Gemini, batch size 100                                                                                              
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:71: UserWarning: The plugin will control the accelerator, so the device argument will be ignored.
+  warnings.warn('The plugin will control the accelerator, so the device argument will be ignored.')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:77: UserWarning: The plugin will control the precision, so the mixed_precision argument will be ignored.
+  warnings.warn('The plugin will control the precision, so the mixed_precision argument will be ignored.')
+[09/17/23 02:14:20] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:189 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: After init optim, GPU memory usage: 0.00 MB, CPU memory usage: 1546.04 MB                                                        
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:71: UserWarning: The plugin will control the accelerator, so the device argument will be ignored.
+  warnings.warn('The plugin will control the accelerator, so the device argument will be ignored.')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:77: UserWarning: The plugin will control the precision, so the mixed_precision argument will be ignored.
+  warnings.warn('The plugin will control the precision, so the mixed_precision argument will be ignored.')
+[09/17/23 02:14:27] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:208 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: the size of testing model size is 1.6B.                                                                                          
+[09/17/23 02:14:27] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:208 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: the size of testing model size is 1.6B.                                                                                          
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:209 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: After init model, GPU memory usage: 3042.11 MB, CPU memory usage: 3048.34 MB                                                     
+[09/17/23 02:14:35] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Forward GPU memory usage: 40019.83 MB, CPU memory usage: 2472.95 MB                                                       
+[09/17/23 02:14:51] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Backward GPU memory usage: 14353.40 MB, CPU memory usage: 2478.92 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Optimizer step GPU memory usage: 14353.40 MB, CPU memory usage: 2479.28 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Loss:11.148, Step time: 24.238s, TFLOPS: 55.363, FWD time: 7.640s, BWD time: 16.586s, OPTIM time: 0.011s                  
+[09/17/23 02:14:58] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Forward GPU memory usage: 40019.83 MB, CPU memory usage: 2479.28 MB                                                       
+[09/17/23 02:15:14] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Backward GPU memory usage: 14353.40 MB, CPU memory usage: 2479.37 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Optimizer step GPU memory usage: 14353.40 MB, CPU memory usage: 2479.59 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Loss:11.148, Step time: 22.949s, TFLOPS: 58.471, FWD time: 6.905s, BWD time: 16.033s, OPTIM time: 0.011s                  
+[09/17/23 02:15:21] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Forward GPU memory usage: 40019.83 MB, CPU memory usage: 2479.59 MB                                                       
+[09/17/23 02:15:37] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Backward GPU memory usage: 14353.40 MB, CPU memory usage: 2479.62 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Optimizer step GPU memory usage: 20328.71 MB, CPU memory usage: 2480.29 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Loss:11.148, Step time: 22.643s, TFLOPS: 59.262, FWD time: 6.933s, BWD time: 15.676s, OPTIM time: 0.034s                  
+[09/17/23 02:15:44] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [4/50] Forward GPU memory usage: 45994.64 MB, CPU memory usage: 2480.29 MB                                                       
+Traceback (most recent call last):
+  File "./train_gpt_demo.py", line 289, in main
+    train_step(tblogger=tblogger, step_counter=n, monitor=monitor, batch_size=args.batch_size)
+  File "./train_gpt_demo.py", line 238, in train_step
+    booster.backward(loss, optimizer)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py", line 143, in backward
+    optimizer.backward(loss)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/zero/gemini/gemini_optimizer.py", line 254, in backward
+    self.module.backward(loss)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/zero/gemini/gemini_ddp.py", line 304, in backward
+    loss.backward()
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/_tensor.py", line 486, in backward
+    inputs=inputs,
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/overrides.py", line 1534, in handle_torch_function
+    result = torch_func_method(public_api, types, args, kwargs)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/tensor/colo_tensor.py", line 80, in __torch_function__
+    return backward_tensor.backward(**tensor_kwargs)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/_tensor.py", line 489, in backward
+    self, gradient, retain_graph, create_graph, inputs=inputs
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/autograd/function.py", line 267, in apply
+    return user_fn(self, *args)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/utils/checkpoint.py", line 157, in backward
+    torch.autograd.backward(outputs_with_grad, args_with_grad)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 6.25 GiB (GPU 0; 79.15 GiB total capacity; 54.82 GiB already allocated; 5.90 GiB free; 72.32 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "./train_gpt_demo.py", line 298, in <module>
+    main()
+  File "./train_gpt_demo.py", line 289, in main
+    train_step(tblogger=tblogger, step_counter=n, monitor=monitor, batch_size=args.batch_size)
+  File "./train_gpt_demo.py", line 238, in train_step
+    booster.backward(loss, optimizer)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py", line 143, in backward
+    optimizer.backward(loss)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/zero/gemini/gemini_optimizer.py", line 254, in backward
+    self.module.backward(loss)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/zero/gemini/gemini_ddp.py", line 304, in backward
+    loss.backward()
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/_tensor.py", line 486, in backward
+    inputs=inputs,
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/overrides.py", line 1534, in handle_torch_function
+    result = torch_func_method(public_api, types, args, kwargs)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/tensor/colo_tensor.py", line 80, in __torch_function__
+    return backward_tensor.backward(**tensor_kwargs)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/_tensor.py", line 489, in backward
+    self, gradient, retain_graph, create_graph, inputs=inputs
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/autograd/function.py", line 267, in apply
+    return user_fn(self, *args)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/utils/checkpoint.py", line 157, in backward
+    torch.autograd.backward(outputs_with_grad, args_with_grad)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 6.25 GiB (GPU 0; 79.15 GiB total capacity; 54.82 GiB already allocated; 5.90 GiB free; 72.32 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 17935 closing signal SIGTERM
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 17934) of binary: /root/miniconda3/envs/cai/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/cai/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/distributed/run.py", line 762, in main
+    run(args)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/distributed/run.py", line 756, in run
+    )(*cmd_args)
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/envs/cai/lib/python3.7/site-packages/torch/distributed/launcher/api.py", line 248, in launch_agent
+    failures=result.failures,
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./train_gpt_demo.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-09-17_02:15:49
+  host      : cd1babb6bbb5
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 17934)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

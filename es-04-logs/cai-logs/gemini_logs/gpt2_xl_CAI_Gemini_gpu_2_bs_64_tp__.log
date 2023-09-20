@@ -1,0 +1,448 @@
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/flash_attn_2.py:27: UserWarning: please install flash_attn from https://github.com/HazyResearch/flash-attention
+  warnings.warn('please install flash_attn from https://github.com/HazyResearch/flash-attention')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/mem_eff_attn.py:14: UserWarning: please install xformers from https://github.com/facebookresearch/xformers
+  warnings.warn('please install xformers from https://github.com/facebookresearch/xformers')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/flash_attn_2.py:27: UserWarning: please install flash_attn from https://github.com/HazyResearch/flash-attention
+  warnings.warn('please install flash_attn from https://github.com/HazyResearch/flash-attention')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/kernel/cuda_native/mha/mem_eff_attn.py:14: UserWarning: please install xformers from https://github.com/facebookresearch/xformers
+  warnings.warn('please install xformers from https://github.com/facebookresearch/xformers')
+environmental variable OMP_NUM_THREADS is set to 256.
+environmental variable OMP_NUM_THREADS is set to 256.
+[09/17/23 01:32:23] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:522 set_device                      
+[09/17/23 01:32:23] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:522 set_device                      
+                    INFO     colossalai - colossalai - INFO: process rank 0 is bound to device 0                                                                                              
+                    INFO     colossalai - colossalai - INFO: process rank 1 is bound to device 1                                                                                              
+[09/17/23 01:32:24] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:558 set_seed                        
+                    INFO     colossalai - colossalai - INFO: initialized seed on rank 0, numpy: 1024, python random: 1024, ParallelMode.DATA: 1024, ParallelMode.TENSOR: 1024,the default     
+                             parallel seed is ParallelMode.DATA.                                                                                                                              
+                    INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/initialize.py:119 launch                                        
+                    INFO     colossalai - colossalai - INFO: Distributed environment is initialized, data parallel size: 2, pipeline parallel size: 1, tensor parallel size: 1                
+[09/17/23 01:32:24] INFO     colossalai - colossalai - INFO: /root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/context/parallel_context.py:558 set_seed                        
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:154 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: gpt2_xl, CAI_Gemini, batch size 64                                                                                               
+                    INFO     colossalai - colossalai - INFO: initialized seed on rank 1, numpy: 1024, python random: 1024, ParallelMode.DATA: 1024, ParallelMode.TENSOR: 1024,the default     
+                             parallel seed is ParallelMode.DATA.                                                                                                                              
+[09/17/23 01:32:26] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:189 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: After init optim, GPU memory usage: 0.00 MB, CPU memory usage: 1547.37 MB                                                        
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:71: UserWarning: The plugin will control the accelerator, so the device argument will be ignored.
+  warnings.warn('The plugin will control the accelerator, so the device argument will be ignored.')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:77: UserWarning: The plugin will control the precision, so the mixed_precision argument will be ignored.
+  warnings.warn('The plugin will control the precision, so the mixed_precision argument will be ignored.')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:71: UserWarning: The plugin will control the accelerator, so the device argument will be ignored.
+  warnings.warn('The plugin will control the accelerator, so the device argument will be ignored.')
+/root/miniconda3/envs/cai/lib/python3.7/site-packages/colossalai/booster/booster.py:77: UserWarning: The plugin will control the precision, so the mixed_precision argument will be ignored.
+  warnings.warn('The plugin will control the precision, so the mixed_precision argument will be ignored.')
+[09/17/23 01:32:33] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:208 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: the size of testing model size is 1.6B.                                                                                          
+[09/17/23 01:32:33] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:208 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: the size of testing model size is 1.6B.                                                                                          
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:209 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: After init model, GPU memory usage: 3042.11 MB, CPU memory usage: 3049.58 MB                                                     
+[09/17/23 01:32:38] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Forward GPU memory usage: 27272.78 MB, CPU memory usage: 2475.13 MB                                                       
+[09/17/23 01:32:48] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Backward GPU memory usage: 10819.82 MB, CPU memory usage: 2480.77 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Optimizer step GPU memory usage: 10819.82 MB, CPU memory usage: 2481.13 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [1/50] Loss:11.148, Step time: 15.324s, TFLOPS: 56.042, FWD time: 5.221s, BWD time: 10.089s, OPTIM time: 0.014s                  
+[09/17/23 01:32:53] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Forward GPU memory usage: 27273.63 MB, CPU memory usage: 2481.13 MB                                                       
+[09/17/23 01:33:03] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Backward GPU memory usage: 10822.08 MB, CPU memory usage: 2481.23 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Optimizer step GPU memory usage: 10822.08 MB, CPU memory usage: 2481.51 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [2/50] Loss:11.148, Step time: 14.530s, TFLOPS: 59.105, FWD time: 4.440s, BWD time: 10.075s, OPTIM time: 0.015s                  
+[09/17/23 01:33:08] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Forward GPU memory usage: 27273.64 MB, CPU memory usage: 2481.51 MB                                                       
+[09/17/23 01:33:18] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Backward GPU memory usage: 10819.82 MB, CPU memory usage: 2481.54 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Optimizer step GPU memory usage: 16794.78 MB, CPU memory usage: 2482.11 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [3/50] Loss:11.148, Step time: 14.679s, TFLOPS: 58.507, FWD time: 4.440s, BWD time: 10.201s, OPTIM time: 0.037s                  
+[09/17/23 01:33:22] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [4/50] Forward GPU memory usage: 33248.60 MB, CPU memory usage: 2482.11 MB                                                       
+[09/17/23 01:33:32] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [4/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.15 MB                                                      
+[09/17/23 01:33:33] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [4/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.18 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [4/50] Loss:11.148, Step time: 14.669s, TFLOPS: 58.545, FWD time: 4.423s, BWD time: 10.215s, OPTIM time: 0.030s                  
+[09/17/23 01:33:37] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [5/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.18 MB                                                       
+[09/17/23 01:33:47] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [5/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.22 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [5/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.25 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [5/50] Loss:11.195, Step time: 14.643s, TFLOPS: 58.650, FWD time: 4.399s, BWD time: 10.218s, OPTIM time: 0.026s                  
+[09/17/23 01:33:52] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [6/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.25 MB                                                       
+[09/17/23 01:34:02] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [6/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.25 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [6/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.25 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [6/50] Loss:11.227, Step time: 14.649s, TFLOPS: 58.624, FWD time: 4.423s, BWD time: 10.199s, OPTIM time: 0.027s                  
+[09/17/23 01:34:06] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [7/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.25 MB                                                       
+[09/17/23 01:34:17] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [7/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.25 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [7/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [7/50] Loss:11.156, Step time: 14.643s, TFLOPS: 58.647, FWD time: 4.422s, BWD time: 10.196s, OPTIM time: 0.025s                  
+[09/17/23 01:34:21] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [8/50] Forward GPU memory usage: 33248.29 MB, CPU memory usage: 2482.27 MB                                                       
+[09/17/23 01:34:31] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [8/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [8/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [8/50] Loss:11.141, Step time: 14.629s, TFLOPS: 58.705, FWD time: 4.414s, BWD time: 10.190s, OPTIM time: 0.025s                  
+[09/17/23 01:34:36] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [9/50] Forward GPU memory usage: 33248.29 MB, CPU memory usage: 2482.27 MB                                                       
+[09/17/23 01:34:46] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [9/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                                      
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [9/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                                
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [9/50] Loss:11.141, Step time: 14.628s, TFLOPS: 58.711, FWD time: 4.413s, BWD time: 10.188s, OPTIM time: 0.027s                  
+[09/17/23 01:34:50] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [10/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.27 MB                                                      
+[09/17/23 01:35:01] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [10/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [10/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [10/50] Loss:11.125, Step time: 14.633s, TFLOPS: 58.690, FWD time: 4.419s, BWD time: 10.188s, OPTIM time: 0.026s                 
+[09/17/23 01:35:05] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [11/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.27 MB                                                      
+[09/17/23 01:35:15] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [11/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.27 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [11/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.28 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [11/50] Loss:11.094, Step time: 14.634s, TFLOPS: 58.683, FWD time: 4.422s, BWD time: 10.186s, OPTIM time: 0.027s                 
+[09/17/23 01:35:20] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [12/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.28 MB                                                      
+[09/17/23 01:35:30] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [12/50] Backward GPU memory usage: 16794.47 MB, CPU memory usage: 2482.29 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [12/50] Optimizer step GPU memory usage: 16794.47 MB, CPU memory usage: 2482.29 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [12/50] Loss:11.086, Step time: 14.634s, TFLOPS: 58.685, FWD time: 4.424s, BWD time: 10.178s, OPTIM time: 0.032s                 
+[09/17/23 01:35:34] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [13/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.29 MB                                                      
+[09/17/23 01:35:45] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [13/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.29 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [13/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.30 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [13/50] Loss:11.070, Step time: 14.645s, TFLOPS: 58.639, FWD time: 4.433s, BWD time: 10.181s, OPTIM time: 0.031s                 
+[09/17/23 01:35:49] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [14/50] Forward GPU memory usage: 33247.86 MB, CPU memory usage: 2482.30 MB                                                      
+[09/17/23 01:35:59] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [14/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.30 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [14/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.30 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [14/50] Loss:11.062, Step time: 14.613s, TFLOPS: 58.768, FWD time: 4.406s, BWD time: 10.178s, OPTIM time: 0.030s                 
+[09/17/23 01:36:04] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [15/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.32 MB                                                      
+[09/17/23 01:36:14] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [15/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [15/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [15/50] Loss:11.055, Step time: 14.626s, TFLOPS: 58.718, FWD time: 4.422s, BWD time: 10.173s, OPTIM time: 0.030s                 
+[09/17/23 01:36:18] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [16/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.32 MB                                                      
+[09/17/23 01:36:29] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [16/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [16/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [16/50] Loss:11.055, Step time: 14.632s, TFLOPS: 58.695, FWD time: 4.428s, BWD time: 10.173s, OPTIM time: 0.031s                 
+[09/17/23 01:36:33] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [17/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.32 MB                                                      
+[09/17/23 01:36:43] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [17/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [17/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [17/50] Loss:11.039, Step time: 14.630s, TFLOPS: 58.702, FWD time: 4.423s, BWD time: 10.176s, OPTIM time: 0.031s                 
+[09/17/23 01:36:48] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [18/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.32 MB                                                      
+[09/17/23 01:36:58] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [18/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [18/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [18/50] Loss:11.031, Step time: 14.622s, TFLOPS: 58.732, FWD time: 4.419s, BWD time: 10.178s, OPTIM time: 0.026s                 
+[09/17/23 01:37:02] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [19/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.32 MB                                                      
+[09/17/23 01:37:13] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [19/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [19/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [19/50] Loss:11.023, Step time: 14.620s, TFLOPS: 58.740, FWD time: 4.419s, BWD time: 10.175s, OPTIM time: 0.026s                 
+[09/17/23 01:37:17] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [20/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.32 MB                                                      
+[09/17/23 01:37:27] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [20/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [20/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [20/50] Loss:11.016, Step time: 14.619s, TFLOPS: 58.743, FWD time: 4.421s, BWD time: 10.173s, OPTIM time: 0.026s                 
+[09/17/23 01:37:32] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [21/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.32 MB                                                      
+[09/17/23 01:37:42] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [21/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.32 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [21/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [21/50] Loss:11.008, Step time: 14.627s, TFLOPS: 58.713, FWD time: 4.427s, BWD time: 10.171s, OPTIM time: 0.029s                 
+[09/17/23 01:37:46] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [22/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:37:57] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [22/50] Backward GPU memory usage: 16794.74 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [22/50] Optimizer step GPU memory usage: 16794.74 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [22/50] Loss:11.008, Step time: 14.635s, TFLOPS: 58.679, FWD time: 4.431s, BWD time: 10.173s, OPTIM time: 0.031s                 
+[09/17/23 01:38:01] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [23/50] Forward GPU memory usage: 33248.56 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:38:11] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [23/50] Backward GPU memory usage: 16794.74 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [23/50] Optimizer step GPU memory usage: 16794.74 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [23/50] Loss:11.000, Step time: 14.624s, TFLOPS: 58.727, FWD time: 4.422s, BWD time: 10.176s, OPTIM time: 0.026s                 
+[09/17/23 01:38:16] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [24/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:38:26] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [24/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [24/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [24/50] Loss:11.000, Step time: 14.627s, TFLOPS: 58.714, FWD time: 4.426s, BWD time: 10.175s, OPTIM time: 0.026s                 
+[09/17/23 01:38:30] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [25/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:38:41] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [25/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [25/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [25/50] Loss:10.984, Step time: 14.597s, TFLOPS: 58.834, FWD time: 4.396s, BWD time: 10.174s, OPTIM time: 0.026s                 
+[09/17/23 01:38:45] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [26/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:38:55] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [26/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [26/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [26/50] Loss:10.984, Step time: 14.614s, TFLOPS: 58.766, FWD time: 4.411s, BWD time: 10.178s, OPTIM time: 0.025s                 
+[09/17/23 01:39:00] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [27/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:39:10] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [27/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [27/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [27/50] Loss:10.984, Step time: 14.626s, TFLOPS: 58.717, FWD time: 4.422s, BWD time: 10.179s, OPTIM time: 0.026s                 
+[09/17/23 01:39:14] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [28/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:39:25] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [28/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [28/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [28/50] Loss:10.977, Step time: 14.605s, TFLOPS: 58.803, FWD time: 4.404s, BWD time: 10.169s, OPTIM time: 0.031s                 
+[09/17/23 01:39:29] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [29/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:39:39] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [29/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [29/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [29/50] Loss:10.977, Step time: 14.626s, TFLOPS: 58.717, FWD time: 4.423s, BWD time: 10.177s, OPTIM time: 0.025s                 
+[09/17/23 01:39:44] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [30/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:39:54] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [30/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [30/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [30/50] Loss:10.984, Step time: 14.613s, TFLOPS: 58.769, FWD time: 4.415s, BWD time: 10.167s, OPTIM time: 0.030s                 
+[09/17/23 01:39:58] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [31/50] Forward GPU memory usage: 33248.29 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:40:09] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [31/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [31/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [31/50] Loss:10.977, Step time: 14.630s, TFLOPS: 58.702, FWD time: 4.429s, BWD time: 10.175s, OPTIM time: 0.026s                 
+[09/17/23 01:40:13] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [32/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:40:23] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [32/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [32/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.34 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [32/50] Loss:10.977, Step time: 14.659s, TFLOPS: 58.587, FWD time: 4.414s, BWD time: 10.213s, OPTIM time: 0.031s                 
+[09/17/23 01:40:28] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [33/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.34 MB                                                      
+[09/17/23 01:40:38] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [33/50] Backward GPU memory usage: 16794.47 MB, CPU memory usage: 2482.41 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [33/50] Optimizer step GPU memory usage: 16794.47 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [33/50] Loss:10.977, Step time: 14.631s, TFLOPS: 58.695, FWD time: 4.425s, BWD time: 10.175s, OPTIM time: 0.031s                 
+[09/17/23 01:40:42] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [34/50] Forward GPU memory usage: 33247.86 MB, CPU memory usage: 2482.43 MB                                                      
+[09/17/23 01:40:53] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [34/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [34/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [34/50] Loss:10.969, Step time: 14.630s, TFLOPS: 58.703, FWD time: 4.427s, BWD time: 10.178s, OPTIM time: 0.025s                 
+[09/17/23 01:40:57] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [35/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.43 MB                                                      
+[09/17/23 01:41:07] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [35/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [35/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [35/50] Loss:10.961, Step time: 14.616s, TFLOPS: 58.755, FWD time: 4.414s, BWD time: 10.172s, OPTIM time: 0.030s                 
+[09/17/23 01:41:12] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [36/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.43 MB                                                      
+[09/17/23 01:41:22] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [36/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [36/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [36/50] Loss:10.961, Step time: 14.624s, TFLOPS: 58.725, FWD time: 4.423s, BWD time: 10.176s, OPTIM time: 0.025s                 
+[09/17/23 01:41:26] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+[09/17/23 01:41:27] INFO     colossalai - colossalai - INFO: [37/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.43 MB                                                      
+[09/17/23 01:41:37] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [37/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [37/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [37/50] Loss:10.953, Step time: 14.617s, TFLOPS: 58.753, FWD time: 4.415s, BWD time: 10.173s, OPTIM time: 0.029s                 
+[09/17/23 01:41:41] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [38/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.43 MB                                                      
+[09/17/23 01:41:51] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [38/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [38/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [38/50] Loss:10.953, Step time: 14.625s, TFLOPS: 58.720, FWD time: 4.420s, BWD time: 10.180s, OPTIM time: 0.026s                 
+[09/17/23 01:41:56] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [39/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.43 MB                                                      
+[09/17/23 01:42:06] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [39/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [39/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [39/50] Loss:10.945, Step time: 14.617s, TFLOPS: 58.752, FWD time: 4.416s, BWD time: 10.175s, OPTIM time: 0.026s                 
+[09/17/23 01:42:11] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [40/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.43 MB                                                      
+[09/17/23 01:42:21] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [40/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [40/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.43 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [40/50] Loss:10.953, Step time: 14.657s, TFLOPS: 58.592, FWD time: 4.416s, BWD time: 10.215s, OPTIM time: 0.026s                 
+[09/17/23 01:42:25] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [41/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.45 MB                                                      
+[09/17/23 01:42:35] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [41/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.45 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [41/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.45 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [41/50] Loss:10.945, Step time: 14.606s, TFLOPS: 58.797, FWD time: 4.406s, BWD time: 10.174s, OPTIM time: 0.026s                 
+[09/17/23 01:42:40] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [42/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.45 MB                                                      
+[09/17/23 01:42:50] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [42/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.45 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [42/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.45 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [42/50] Loss:10.945, Step time: 14.621s, TFLOPS: 58.738, FWD time: 4.417s, BWD time: 10.177s, OPTIM time: 0.026s                 
+[09/17/23 01:42:55] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [43/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.45 MB                                                      
+[09/17/23 01:43:05] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [43/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.45 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [43/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.45 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [43/50] Loss:10.938, Step time: 14.607s, TFLOPS: 58.795, FWD time: 4.407s, BWD time: 10.175s, OPTIM time: 0.024s                 
+[09/17/23 01:43:09] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [44/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.45 MB                                                      
+[09/17/23 01:43:19] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [44/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [44/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [44/50] Loss:10.938, Step time: 14.622s, TFLOPS: 58.734, FWD time: 4.421s, BWD time: 10.175s, OPTIM time: 0.026s                 
+[09/17/23 01:43:24] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [45/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.46 MB                                                      
+[09/17/23 01:43:34] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [45/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [45/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [45/50] Loss:10.945, Step time: 14.615s, TFLOPS: 58.762, FWD time: 4.411s, BWD time: 10.178s, OPTIM time: 0.025s                 
+[09/17/23 01:43:39] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [46/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.46 MB                                                      
+[09/17/23 01:43:49] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [46/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [46/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [46/50] Loss:10.945, Step time: 14.605s, TFLOPS: 58.803, FWD time: 4.405s, BWD time: 10.175s, OPTIM time: 0.025s                 
+[09/17/23 01:43:53] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [47/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.46 MB                                                      
+[09/17/23 01:44:03] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [47/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [47/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [47/50] Loss:10.938, Step time: 14.604s, TFLOPS: 58.804, FWD time: 4.402s, BWD time: 10.173s, OPTIM time: 0.029s                 
+[09/17/23 01:44:08] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [48/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.46 MB                                                      
+[09/17/23 01:44:18] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [48/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [48/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [48/50] Loss:10.945, Step time: 14.610s, TFLOPS: 58.781, FWD time: 4.411s, BWD time: 10.172s, OPTIM time: 0.026s                 
+[09/17/23 01:44:23] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [49/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.46 MB                                                      
+[09/17/23 01:44:33] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [49/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [49/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [49/50] Loss:10.945, Step time: 14.626s, TFLOPS: 58.716, FWD time: 4.420s, BWD time: 10.177s, OPTIM time: 0.029s                 
+[09/17/23 01:44:37] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:235 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [50/50] Forward GPU memory usage: 33247.74 MB, CPU memory usage: 2482.46 MB                                                      
+[09/17/23 01:44:47] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:243 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [50/50] Backward GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                                     
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:262 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [50/50] Optimizer step GPU memory usage: 16793.92 MB, CPU memory usage: 2482.46 MB                                               
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:267 train_step                                                                                               
+                    INFO     colossalai - colossalai - INFO: [50/50] Loss:10.938, Step time: 14.601s, TFLOPS: 58.820, FWD time: 4.395s, BWD time: 10.176s, OPTIM time: 0.029s                 
+                    INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:294 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: Median TFLOPS is 58.720                                                                                                          
+[09/17/23 01:44:47] INFO     colossalai - colossalai - INFO: ./train_gpt_demo.py:294 main                                                                                                     
+                    INFO     colossalai - colossalai - INFO: Median TFLOPS is 58.805                                                                                                          
